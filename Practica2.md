@@ -10,9 +10,9 @@ A continuación se muestra la arquitectura lógica del sistema, los flujos de da
 
 ```mermaid
 graph TD
-    %% Definición de Estilos y Fronteras de Confianza
-    classDef internet fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef secureZone fill:#bbf,stroke:#333,stroke-width:2px;
+    %% Definición de Estilos con texto oscuro visible (#000000)
+    classDef internet fill:#f9f,stroke:#333,stroke-width:2px,color:#000000;
+    classDef secureZone fill:#bbf,stroke:#333,stroke-width:2px,color:#000000;
 
     %% Actores y Componentes
     Usuario["🌐 Usuario (Navegador/App)"] -->|"1. Envía Credenciales (HTTPS)"| API["⚙️ API Gateway / Backend"]
