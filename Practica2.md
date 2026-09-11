@@ -2,7 +2,7 @@
 
 **Fecha:** 2026-08-31  
 **Versión:** 1.0  
-**Autores:** [Nombre del Alumno / Equipo]
+**Autores:** [Andrea Marely Millan Elias / 4°A]
 
 ## 1. Diagrama de Flujo de Datos (DFD) con Mermaid.js
 
