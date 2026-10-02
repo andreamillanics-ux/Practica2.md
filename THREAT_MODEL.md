@@ -1,7 +1,7 @@
 # Modelado de Amenazas: Sistema de Autenticación y API de Usuarios
 
 **Fecha:** 2026-08-31  
-**Versión:** 1.0  
+**Versión:** 1.1 (Corregido)  
 **Autores:** [Andrea Marely Millan Elias / 4°A]
 
 ## 1. Diagrama de Flujo de Datos (DFD) con Mermaid.js
@@ -12,8 +12,7 @@ graph TD
     classDef secureZone fill:#bbf,stroke:#333,stroke-width:2px,color:#000000;
 
     Usuario["🌐 Usuario (Navegador/App)"] -->|"1. Envía Credenciales (HTTPS)"| API["⚙️ API Gateway / Backend"]
-    Usuario -->|"CONEXION DIRECTA INSEGURA"| BD[("💾 Base de Datos SQL")]
-    Admin["🧑‍💼 Administrador de Red"] -->|"5. Mantenimiento (SSH)"| BD
+    Admin["🧑‍💼 Administrador de Red"] -->|"5. Mantenimiento (SSH)"| BD[("💾 Base de Datos SQL")]
 
     API -->|"2. Consulta / Guarda Usuario"| BD
     API -->|"3. Valida Token"| Auth["🔑 Servicio de Auth Externo (OAuth)"]
